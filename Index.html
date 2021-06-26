@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+<script type="text/javascript" charset="utf-8">
+  //enter any word
+  let word = prompt("Enter a word:");
+  
+  //check if entered word is a palindrome
+  function palindromeChecker() {
+    //1st: remove white spaces in the word
+    let wordTrim = word.replace(/ /g, "");
+    //next: reverse the word
+    let reverseWord = wordTrim.split("").reverse().join("");
+    //compare word and reversed word  
+      if(wordTrim == reverseWord){
+        alert("Palindrome!!")
+      }else{
+        alert("not a Palindrome!!")
+      }
+  }
+  palindromeChecker();
+</script>
+</body>
+
+</html>
